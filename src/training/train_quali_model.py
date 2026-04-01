@@ -22,11 +22,11 @@ warnings.filterwarnings("ignore")
 
 # Configuration
 
-INPUT_FILE      = "/workspaces/drs_data/data/master_qualifying_data_enriched.csv"
-MODEL_PATH      = "/workspaces/drs_data/models/xgb_model_quali_v1.pkl"
-FEATURES_PATH   = "/workspaces/drs_data/models/xgb_features_quali_v1.pkl"
-EXPLAINER_PATH  = "/workspaces/drs_data/models/shap_explainer_v1.pkl"
-METRICS_PATH    = "/workspaces/drs_data/models/metrics_quali_v1.json"
+INPUT_FILE      = "/drs_data/data/master_qualifying_data_enriched.csv"
+MODEL_PATH      = "/drs_data/models/xgb_model_quali_v1.pkl"
+FEATURES_PATH   = "/drs_data/models/xgb_features_quali_v1.pkl"
+EXPLAINER_PATH  = "/drs_data/models/shap_explainer_v1.pkl"
+METRICS_PATH    = "/drs_data/models/metrics_quali_v1.json"
 
 # Cold-start handicap position for rookie/new teams
 HANDICAP_POS = 19.0

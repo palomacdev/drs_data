@@ -17,10 +17,9 @@ warnings.filterwarnings("ignore")
 
 # Configuration
 
-INPUT_FILE  = "/workspaces/drs_data/data/master_qualifying_data_2023-2026.csv"
-OUTPUT_FILE = "/workspaces/drs_data/data/master_qualifying_data_enriched.csv"
-CACHE_PATH  = "/workspaces/f1-project/cache"
-
+INPUT_FILE  = "/drs_data/data/master_qualifying_data_2023-2026.csv"
+OUTPUT_FILE = "/drs_data/data/master_qualifying_data_enriched.csv"
+CACHE_PATH  = "/drs_data/cache"
 API_DELAY   = 0.2   # seconds between API calls
 API_TIMEOUT = 5     # timeout by request
 

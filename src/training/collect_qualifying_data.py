@@ -14,8 +14,8 @@ from tqdm.auto import tqdm
 
 # Path configuration
 
-CACHE_PATH = "/workspaces/drs_data/cache"
-DATA_PATH  = "/workspaces/drs_data/data"
+CACHE_PATH = "/drs_data/cache"
+DATA_PATH  = "/drs_data/data"
 OUTPUT_FILE = f"{DATA_PATH}/master_qualifying_data_2023-2026.csv"
 
 YEARS = [2023, 2024, 2025, 2026]
