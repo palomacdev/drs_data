@@ -444,7 +444,7 @@ print(
 # --- Save to CSV ---
 output_csv_path = os.path.join(
     PATH_PREDICTIONS,
-    f"{ANO_ATUAL}_{NOME_EVENTO.replace(' ', '_')}_RaceSimulationv3.csv",
+    f"{ANO_ATUAL}_{NOME_EVENTO.replace(' ', '_')}_RaceSimulation.csv",
 )
 df_final_results.to_csv(output_csv_path, index=False)
 print(f"\n✅ Simulation results saved to: {output_csv_path}")

@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "event": "Japan Grand Prix",
+    "year": 2026,
+    "mode": "QUALI",
+    "generated_at": "2026-04-01T17:53:01Z",
+    "total_drivers": 21
+  },
+  "metrics": {
+    "mae": 1.5714,
+    "exact_hits": 10,
+    "exact_pct": 47.62,
+    "close_hits": 18,
+    "close_pct": 85.71,
+    "top3_correct": 3,
+    "top3_accuracy": 100.0,
+    "top10_correct": 8,
+    "top10_accuracy": 80.0,
+    "overall_rating": "EXCELLENT ⭐⭐⭐⭐⭐"
+  },
+  "error_distribution": {
+    "perfect": 10,
+    "excellent": 1,
+    "very_good": 3,
+    "good": 4,
+    "miss": 2,
+    "big_miss": 1
+  },
+  "drivers": [
+    {
+      "driver": "ANT",
+      "predicted_pos": 1,
+      "actual_pos": 1,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "RUS",
+      "predicted_pos": 2,
+      "actual_pos": 2,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "PIA",
+      "predicted_pos": 3,
+      "actual_pos": 3,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "LEC",
+      "predicted_pos": 4,
+      "actual_pos": 4,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "NOR",
+      "predicted_pos": 5,
+      "actual_pos": 5,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "HAM",
+      "predicted_pos": 6,
+      "actual_pos": 6,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "GAS",
+      "predicted_pos": 13,
+      "actual_pos": 7,
+      "error": 6,
+      "status": "BIG MISS"
+    },
+    {
+      "driver": "HAD",
+      "predicted_pos": 8,
+      "actual_pos": 8,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "BOR",
+      "predicted_pos": 12,
+      "actual_pos": 9,
+      "error": 3,
+      "status": "GOOD"
+    },
+    {
+      "driver": "LIN",
+      "predicted_pos": 9,
+      "actual_pos": 10,
+      "error": 1,
+      "status": "EXCELLENT"
+    },
+    {
+      "driver": "VER",
+      "predicted_pos": 7,
+      "actual_pos": 11,
+      "error": 4,
+      "status": "MISS"
+    },
+    {
+      "driver": "OCO",
+      "predicted_pos": 14,
+      "actual_pos": 12,
+      "error": 2,
+      "status": "VERY GOOD"
+    },
+    {
+      "driver": "HUL",
+      "predicted_pos": 10,
+      "actual_pos": 13,
+      "error": 3,
+      "status": "GOOD"
+    },
+    {
+      "driver": "LAW",
+      "predicted_pos": 11,
+      "actual_pos": 14,
+      "error": 3,
+      "status": "GOOD"
+    },
+    {
+      "driver": "COL",
+      "predicted_pos": 19,
+      "actual_pos": 15,
+      "error": 4,
+      "status": "MISS"
+    },
+    {
+      "driver": "SAI",
+      "predicted_pos": 18,
+      "actual_pos": 16,
+      "error": 2,
+      "status": "VERY GOOD"
+    },
+    {
+      "driver": "ALB",
+      "predicted_pos": 17,
+      "actual_pos": 17,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "BEA",
+      "predicted_pos": 15,
+      "actual_pos": 18,
+      "error": 3,
+      "status": "GOOD"
+    },
+    {
+      "driver": "PER",
+      "predicted_pos": 21,
+      "actual_pos": 19,
+      "error": 2,
+      "status": "VERY GOOD"
+    },
+    {
+      "driver": "BOT",
+      "predicted_pos": 20,
+      "actual_pos": 20,
+      "error": 0,
+      "status": "PERFECT"
+    },
+    {
+      "driver": "STR",
+      "predicted_pos": 22,
+      "actual_pos": 22,
+      "error": 0,
+      "status": "PERFECT"
+    }
+  ],
+  "biggest_misses": [
+    {
+      "driver": "GAS",
+      "predicted_pos": 13,
+      "actual_pos": 7,
+      "error": 6
+    },
+    {
+      "driver": "VER",
+      "predicted_pos": 7,
+      "actual_pos": 11,
+      "error": 4
+    },
+    {
+      "driver": "COL",
+      "predicted_pos": 19,
+      "actual_pos": 15,
+      "error": 4
+    }
+  ],
+  "best_predictions": [
+    {
+      "driver": "ANT",
+      "predicted_pos": 1,
+      "actual_pos": 1,
+      "error": 0
+    },
+    {
+      "driver": "RUS",
+      "predicted_pos": 2,
+      "actual_pos": 2,
+      "error": 0
+    },
+    {
+      "driver": "PIA",
+      "predicted_pos": 3,
+      "actual_pos": 3,
+      "error": 0
+    }
+  ]
+}
