@@ -1,0 +1,7 @@
+Driver,Team,Compound,Clean_Laps,Base_Pace_Seconds,Pace_Degradation_Slope
+VER,Red Bull Racing,HARD,80,108.7367,0.0988
+NOR,McLaren,MEDIUM,59,101.0263,0.5389
+NOR,McLaren,SOFT,61,104.11,-0.3129
+VER,Red Bull Racing,HARD,106,89.5664,0.9307
+HAD,Red Bull Racing,HARD,30,87.4586,2.0187
+ANT,Mercedes,SOFT,8,85.6582,2.902
