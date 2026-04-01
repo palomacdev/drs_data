@@ -25,11 +25,11 @@ warnings.filterwarnings("ignore")
 CURRENT_YEAR  = 2026
 EVENT_NAME    = "Japan Grand Prix"
 
-PATH_DATA     = "/workspaces/drs_data/data"
-PATH_MODELS   = "/workspaces/drs_data/models"
-PATH_CACHE    = "/workspaces/drs_data/cache"
+PATH_DATA     = "/drs_data/data"
+PATH_MODELS   = "/drs_data/models"
+PATH_CACHE    = "/drs_data/cache"
 
-ROOT_OUTPUTS  = f"/workspaces/drs_data/outputs_predictions/{CURRENT_YEAR}"
+ROOT_OUTPUTS  = f"/drs_data/outputs_predictions/{CURRENT_YEAR}"
 PATH_OUTPUT   = os.path.join(ROOT_OUTPUTS, EVENT_NAME.replace(" ", "_"))
 
 MODEL_PATH    = f"{PATH_MODELS}/xgb_model_quali_v1.pkl"

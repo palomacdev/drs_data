@@ -19,8 +19,8 @@ warnings.filterwarnings("ignore")
 CURRENT_YEAR = 2026
 EVENT_NAME   = "Japan Grand Prix"
 
-CACHE_PATH       = "/workspaces/drs_data/cache"
-ROOT_PREDICTIONS = f"/workspaces/drs_data/outputs_predictions/{CURRENT_YEAR}"
+CACHE_PATH       = "/drs_data/cache"
+ROOT_PREDICTIONS = f"/drs_data/outputs_predictions/{CURRENT_YEAR}"
 PATH_OUTPUT      = os.path.join(ROOT_PREDICTIONS, EVENT_NAME.replace(" ", "_"))
 
 # Stint filtering thresholds

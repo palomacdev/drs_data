@@ -1,6 +1,6 @@
 """
 race_simulator.py
-F1 2026 Race Strategy Simulator — M30 Engine
+F1 2026 Race Strategy Simulator — 
 Simulates lap-by-lap strategy for a given Grand Prix using FastF1 qualifying data
 and optional FP2 race pace data.
 
@@ -21,7 +21,7 @@ import fastf1 as ff1
 
 warnings.filterwarnings("ignore")
 
-ff1.Cache.enable_cache("/workspaces/drs_data/cache")
+ff1.Cache.enable_cache("/drs_data/cache")
 
 
 # ==============================================================================
@@ -29,8 +29,8 @@ ff1.Cache.enable_cache("/workspaces/drs_data/cache")
 # ==============================================================================
 
 # --- Folder Paths ---
-ROOT_PREDICTIONS = "/workspaces/drs_data/outputs_predictions/2026"
-PATH_DATA = "/workspaces/drs_data/data"
+ROOT_PREDICTIONS = "/drs_data/outputs_predictions/2026"
+PATH_DATA = "/drs_data/data"
 
 # --- Race Configuration (Suzuka) ---
 ANO_ATUAL = 2026
@@ -199,21 +199,21 @@ try:
 
 except Exception as e:
     print(f"🚨 ERROR loading FastF1 data: {e}")
-    print("The M30 simulator requires the official grid to run.")
+    print("The  simulator requires the official grid to run.")
     raise
 
 
-# --- Load M25 Output (Race Pace) ---
+# --- Load  Output (Race Pace) ---
 pace_file = os.path.join(
     PATH_PREDICTIONS,
     f"{ANO_ATUAL}_{NOME_EVENTO.replace(' ', '_')}_race_pace_data.csv",
 )
 try:
     df_pace_raw = pd.read_csv(pace_file)
-    print(f"✅ M25 race pace data loaded. ({len(df_pace_raw)} stints found)")
+    print(f"✅  race pace data loaded. ({len(df_pace_raw)} stints found)")
 except FileNotFoundError:
     print(f"⚠️ WARNING: Race pace file not found: {pace_file}")
-    print("This is normal for Sprint weekends or if M25 was not run. Falling back to skill adjustment.")
+    print("This is normal for Sprint weekends or if  was not run. Falling back to skill adjustment.")
     df_pace_raw = pd.DataFrame(
         columns=["Driver", "Team", "Compound", "Base_Pace_Seconds", "Pace_Degradation_Slope"]
     )

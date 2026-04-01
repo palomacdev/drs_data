@@ -28,8 +28,8 @@ NOME_EVENTO = "Japan Grand Prix"
 ANALYSIS_MODE = "QUALI"
 
 # --- Paths ---
-ROOT_PREDICTIONS = "/workspaces/drs_data/outputs_predictions/2026"
-CACHE_PATH       = "/workspaces/drs_data/cache"
+ROOT_PREDICTIONS = "/drs_data/outputs_predictions/2026"
+CACHE_PATH       = "/drs_data/cache"
 
 ff1.Cache.enable_cache(CACHE_PATH)
 print(f"Cache enabled at: {CACHE_PATH}")
