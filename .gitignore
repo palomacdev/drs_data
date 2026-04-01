@@ -1,0 +1,74 @@
+# drs_data 
+
+# FastF1 cache
+cache/
+*.cache
+
+# project structure
+data/
+!data/.gitkeep # keeps the folder but not the files
+
+models/
+!models/.gitkeep # keeps the folder but not the files
+
+# python 
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Trained models
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+
+# Tests and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# jupyter 
+.ipynb_checkpoints
+*.ipynb_checkpoints
+.jupyter/
+
+# env
+.venv/
+venv/
+env/
+Pipfile.lock
+poetry.lock
+
+# credencials
+.env
+*.env
+.env.local
+.secrets/
+credentials.json
+*.key
+*.pem
+
+# temp
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# ide
+.vscode/
