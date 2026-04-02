@@ -1,65 +1,88 @@
-# DRS Data — F1 Telemetry & Race Prediction
+<div align="center">
 
-**A high-performance Machine Learning system for Formula 1® analysis, prediction, and race simulation.**
+# 🏎️ DRS Data
 
-DRS Data (Data Racing Strategies) is an end-to-end ML pipeline designed to model race weekends, predict qualifying results, simulate race scenarios, and explain performance using telemetry and session data.
+### F1 Telemetry & Race Prediction
+
+*A high-performance Machine Learning system for Formula 1® analysis, prediction, and race simulation.*
+
+<br/>
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![FastF1](https://img.shields.io/badge/FastF1-Telemetry-E10600?style=for-the-badge&logo=f1&logoColor=white)](https://github.com/theOehrly/Fast-F1)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-8B5CF6?style=for-the-badge)](CONTRIBUTING.md)
+
+</div>
 
 ---
 
-## 📊 Results
+## 🧠 What is DRS Data?
 
-Latest model performance:
+**DRS Data** (Data Racing Strategies) is an end-to-end ML pipeline designed to model Formula 1 race weekends — from raw telemetry to race outcome prediction.
 
-- **Qualifying MAE:** 2.18 – 2.88 positions  
-- **Race MAE:** ~2.5 positions  
-- **R²:** up to 0.65  
-
-The model captures meaningful performance patterns despite the stochastic nature of Formula 1.
+The system collects session data via FastF1, engineers domain-specific features, trains predictive models, simulates race scenarios, and explains performance using SHAP — all in a modular, extensible pipeline.
 
 ---
 
-## 🧠 Features
+## 📊 Model Performance
 
-- 📈 Qualifying prediction pipeline  
-- 🏁 Race pace analysis  
-- 🔁 Race simulation engine  
-- 🔍 SHAP explainability  
-- 📊 Automated accuracy reporting (JSON + Markdown)  
-- ⚙️ Modular ML pipeline (training → prediction → simulation)
+<div align="center">
+
+| Metric | Value |
+|:---|:---:|
+| 🏎️ Qualifying MAE | `2.18 – 2.88 positions` |
+| 🏁 Race MAE | `~2.5 positions` |
+| 📈 R² Score | `up to 0.65` |
+
+</div>
+
+> The model captures meaningful performance patterns despite the inherently stochastic nature of Formula 1 racing.
+
+---
+
+## ⚡ Features
+
+| Module | Description |
+|:---|:---|
+| 📈 **Qualifying Prediction** | Predicts grid positions using session telemetry |
+| 🏁 **Race Pace Analysis** | Models race-long pace and tire degradation |
+| 🔁 **Race Simulation** | Simulates race scenarios lap by lap |
+| 🔍 **SHAP Explainability** | Explains what drives each prediction |
+| 📊 **Automated Reporting** | Generates JSON logs and Markdown summaries |
+| ⚙️ **Modular Pipeline** | Clean flow: training → prediction → simulation |
 
 ---
 
 ## 🏗️ Project Structure
 
-``` text
+```
 drs_data/
 ├── src/
-│ ├── training/ # data collection, feature engineering, training
-│ ├── prediction/ # qualifying prediction 
-│ ├── simulation/ # race simulation logic
-│ ├── analisys/ # model accuracy analysis
+│   ├── training/           # Data collection, feature engineering, model training
+│   ├── prediction/         # Qualifying and race predictions
+│   ├── simulation/         # Race simulation engine and pace analysis
+│   └── analysis/           # Model accuracy reporting
 │
-├── data/ # raw & processed datasets
-├── models/ # trained models (.pkl)
-├── cache/ # FastF1 cache
-├── outputs_predictions/ # predictions & simulation outputs
+├── data/                   # Raw & processed datasets
+├── models/                 # Trained models (.pkl)
+├── cache/                  # FastF1 session cache
+├── outputs_predictions/    # Generated prediction outputs
+├── requirements.txt
+└── README.md
 ```
-
 
 ---
 
-## ⚡ Getting Started
+## 🚀 Getting Started
 
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/palomacdev/drs_data
-```
-
-```bash
 cd drs_data
 ```
-
 
 ### 2. Install dependencies
 
@@ -67,25 +90,23 @@ cd drs_data
 pip install -r requirements.txt
 ```
 
-### 3. Create Dataset
+### 3. Collect & enrich data
 
-*First run may take a while. You can process data year by year.*
+> ⏳ First run may take a while — process data year by year for best results.
+
 ```bash
 python src/training/collect_qualifying_data.py
-```
-
-
-```bash
 python src/training/data_enrichment.py
 ```
 
-### 4. Run Training
+### 4. Train the model
 
 ```bash
 python src/training/train_quali_model.py
 ```
 
-### 5. Run Predictions
+### 5. Run predictions
+
 ```bash
 python src/prediction/predict_qualifying.py
 ```
@@ -94,57 +115,57 @@ python src/prediction/predict_qualifying.py
 
 ## 📊 Model Reporting
 
-The project includes automated reporting:
+Generate automated accuracy reports (JSON + Markdown):
 
-- JSON logs for programmatic analysis  
-- Markdown summaries for human-readable insights  
-
-Generated via:
 ```bash
 python src/analysis/accuracy_report.py
 ```
+
 ---
 
-## 🧪 Simulation
+## 🧪 Race Simulation
 
-Race scenarios can be simulated using:
+Simulate full race scenarios using trained models:
 
 ```bash
+# Step 1 — run race pace analysis
+python src/simulation/race_pace_overview.py
+
+# Step 2 — run the race simulator
 python src/simulation/race_simulator.py
 ```
-
-*To run race simulator you need to also run the race pace*
-```bash
-python src/simulation/race_pace_overview.py
-```
-
 
 ---
 
 ## 🔮 Roadmap
 
-- Improve feature engineering (weather, tire strategies, track evolution)  
-- Add real-time prediction capabilities  
-- Expand simulation realism  
-- Deploy as API or dashboard  
+- [ ] Weather integration (rain probability, temperature, humidity)
+- [ ] Tire strategy modeling (compound, age, undercut windows)
+- [ ] Real-time prediction pipeline
+- [ ] REST API or Streamlit dashboard
+- [ ] Improved simulation realism (safety car, pit stops)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!  
-Check `CONTRIBUTING.md` for guidelines.
+Contributions are welcome — from bug fixes to new features and experiments!
+
+Check [`CONTRIBUTING.md`](CONTRIBUTING.md) for branch conventions, guidelines, and ideas on where to start.
 
 ---
 
 ## 📄 License
 
-MIT License
+Distributed under the [MIT License](LICENSE).
 
 ---
 
-## 💭 Final Note
+<div align="center">
 
-This project was built as an exploration of applying Machine Learning to motorsport data.
+*Built by someone who loves both data and the sound of a V10.*
+*If you're into F1, ML, or both — this project is for you. 🏁*
 
-If you're into F1, data engineering, or ML systems this is for you.
+**[⭐ Star this repo](https://github.com/palomacdev/drs_data) if you find it useful!**
+
+</div>
