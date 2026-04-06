@@ -9,6 +9,7 @@ data/
 !data/.gitkeep # keeps the folder but not the files
 
 models/
+*.pkl
 !models/.gitkeep # keeps the folder but not the files
 
 # python 
