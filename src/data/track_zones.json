@@ -1,0 +1,31 @@
+
+// Data being filled in according to the official FIA announcement for 2026.
+
+{
+  "Australia": {
+    "straight_zones": [
+      {"start": 14, "end": 1, "name": "Finish Line"},
+      {"start": 2, "end": 3, "name": "Back Straight"},
+      {"start": 5, "end": 6, "name": "Lake Straight"},
+      {"start": 8, "end": 9, "name": "Inner Loop"},
+      {"start": 10, "end": 11, "name": "Exit Loop"}
+    ],
+    "mom_detection": 14
+  },
+  "China": {
+    "straight_zones": [
+      {"start": 16, "end": 1, "name": "Main Straight (A1)"},
+      {"start": 4, "end": 6, "name": "Sector 1 Straight (A2)"},
+      {"start": 10, "end": 11, "name": "Sector 2 Straight (A3)"},
+      {"start": 13, "end": 14, "name": "Back Straight (A4)"}
+    ],
+    "mom_detection": 16
+  },
+  "Japan": {
+    "straight_zones": [
+      {"start": 18, "end": 1, "name": "Main Straight (A1)"},
+      {"start": 14, "end": 15, "name": "Back Straight (A2)"}
+    ],
+    "mom_detection": 17
+  }
+}
