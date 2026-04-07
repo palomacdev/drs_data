@@ -6,11 +6,11 @@ cache/
 
 # project structure
 data/
-!data/.gitkeep # keeps the folder but not the files
+!src/data/
+!src/data/**
 
 models/
-*.pkl
-!models/.gitkeep # keeps the folder but not the files
+
 
 # python 
 __pycache__/

@@ -60,6 +60,7 @@ The system collects session data via FastF1, engineers domain-specific features,
 ```
 drs_data/
 ├── src/
+│   ├── data/               # Track context data
 │   ├── training/           # Data collection, feature engineering, model training
 │   ├── prediction/         # Qualifying and race predictions
 │   ├── simulation/         # Race simulation engine and pace analysis
